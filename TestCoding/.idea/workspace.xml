@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="test" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="483bc7fa-6388-480b-ae17-ac4e90ca8542" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QM8QtiF8HheOh7527XJc90sJ9q" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\TestCoding\target\test-classes" />
+      <recent name="E:\TestCoding\src\test\java" />
+      <recent name="E:\TestCoding\target" />
+      <recent name="E:\TestCoding\src\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bocsodf.service" />
+      <recent name="bocsodf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TestCoding\src" />
+      <recent name="E:\TestCoding\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.inquiryBalanceService">
+    <configuration name="TestPOSService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bocsodf.service.TestPOSService" />
+      <module name="TestCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bocsodf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bocsodf.service.TestServer" />
+      <module name="TestCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bocsodf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inquiryBalanceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bocsodf.service.inquiryBalanceService" />
+      <module name="TestCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bocsodf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPos.sendPos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bocsodf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bocsodf.service" />
+      <option name="MAIN_CLASS_NAME" value="bocsodf.service.TestPos" />
+      <option name="METHOD_NAME" value="sendPos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPos.sendTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bocsodf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bocsodf.service" />
+      <option name="MAIN_CLASS_NAME" value="bocsodf.service.TestPos" />
+      <option name="METHOD_NAME" value="sendTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.inquiryBalanceService" />
+        <item itemvalue="Application.TestPOSService" />
+        <item itemvalue="JUnit.TestPos.sendTest" />
+        <item itemvalue="JUnit.TestPos.sendPos" />
+        <item itemvalue="Application.TestServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="483bc7fa-6388-480b-ae17-ac4e90ca8542" name="Default Changelist" comment="" />
+      <created>1567569091742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567569091742</updated>
+      <workItem from="1567569094923" duration="3929000" />
+      <workItem from="1567591768919" duration="2639000" />
+      <workItem from="1567836729215" duration="26000" />
+      <workItem from="1567843831534" duration="6212000" />
+      <workItem from="1568098478796" duration="158000" />
+      <workItem from="1568267493801" duration="102258000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bocsodf/until/Pos8583Until.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bocsodf/until/Pos8583Until.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bocsodf/service/inquiryBalanceService.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
