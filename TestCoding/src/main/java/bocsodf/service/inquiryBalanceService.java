@@ -53,7 +53,7 @@ public class inquiryBalanceService {
         filedMap.put("FIELD045", "");//
         filedMap.put("FIELD048", "");//
         filedMap.put("FIELD049", "");//
-        filedMap.put("FIELD052", "asdzxc");//个人标识码数据
+        filedMap.put("FIELD052", "00101010");//个人标识码数据
         filedMap.put("FIELD053", "");//
         filedMap.put("FIELD054", "");//
         filedMap.put("FIELD056", "");//
@@ -68,7 +68,7 @@ public class inquiryBalanceService {
         filedMap.put("FIELD121", "");//
         filedMap.put("FIELD122", "");//
         filedMap.put("FIELD123", "");//
-        filedMap.put("FIELD128", "");//
+        filedMap.put("FIELD128", "0010");//
 
         //*报文头
         TreeMap headerMap = new TreeMap();

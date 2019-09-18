@@ -113,8 +113,6 @@ public class Pos8583Until {
                     PosTypeEnum defType = domainInfo.getType();//类型定义例string
                     String defLen = domainInfo.getLength();//长度定义,例20
 
-                    //Todo 判断值属性是否与设定匹配
-
                     //是否定长判断
                     boolean isFixLen = true;
                     if(defLen.startsWith("VAR")){//变长域
@@ -138,11 +136,17 @@ public class Pos8583Until {
                     } else {
                         //定长域(定长比较好理解，一个字段规定是N位，那么字段值绝对不能超过N位，不足N位就在后面补空格)
                         int fixLength = Integer.parseInt(defLen);
+                        if (defType == PosTypeEnum.BINARY) {
+                            fixLength = fixLength * 8;
+                        }
                         if (fieldLen > fixLength) {
                             System.out.println("error:字段" + fieldName + "的数据定义长度为" + defLen + "位,长度不能超过"+defLen);
                             return null;
-                        }else{
-                            fieldValue = FieldUntil.getFixFieldValue(fieldValue,fixLength,packet_encoding,String.class);//定长处理
+                        }
+                        fieldValue = FieldUntil.getFixFieldValue(fieldValue, fixLength, packet_encoding, defType);//定长处理
+                        //二进制来为转换
+                        if (defType == PosTypeEnum.BINARY && fieldValue != null) {
+                            fieldValue = new String(FieldUntil.get16BitByteFromStr(fieldValue,packet_encoding),packet_encoding);
                         }
                     }
                     System.out.println("组装后报文域 {" + fieldName + "}==" + fieldValue+"==,域长度:"+fieldValue.getBytes(packet_encoding).length);
@@ -213,6 +217,10 @@ public class Pos8583Until {
                         int defLen2 = Integer.valueOf(defLen);//长度值占的位数
                         filedValue = new String(content8583, pos, defLen2, packet_encoding);
                         pos += defLen2;//记录当前位置
+                    }
+                    //二进制特殊处理
+                    if (defType == PosTypeEnum.BINARY){
+                        filedValue = FieldUntil.get16BitMapStr(filedValue,packet_encoding);
                     }
                     filedMap.put(filedName, filedValue);
                 }

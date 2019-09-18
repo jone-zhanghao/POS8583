@@ -1,5 +1,7 @@
 package bocsodf.until;
 
+import bocsodf.message.PosTypeEnum;
+
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 
@@ -20,6 +22,17 @@ public class FieldUntil {
      * @param encoding 编码格式
      * @return
      */
+    public static String getFixFieldValue(String valueStr, int defLen, String encoding, PosTypeEnum typeEnum){
+        if (typeEnum == PosTypeEnum.STRING) {
+            return getFixFieldValue(valueStr, defLen, encoding, String.class);
+        }else if (typeEnum == PosTypeEnum.INTEGER){
+            return getFixFieldValue(valueStr, defLen, encoding, Integer.class);
+        }else if (typeEnum == PosTypeEnum.BINARY){
+            return getFixFieldValue(valueStr, defLen, encoding, Integer.class);
+        }
+        return null;
+    }
+
     public static String getFixFieldValue(String valueStr,int defLen,String encoding,Object object){
         String fixValue = "";
         int length = 0;
@@ -139,6 +152,15 @@ public class FieldUntil {
      * @param
      * @return
      */
+    public static String get16BitMapStr(String bitMap16,String encoding)  {
+        try {
+            return get16BitMapStr(bitMap16.getBytes(encoding));
+        }catch (Exception e){
+            //抛出异常
+            System.out.println("error!");
+            return null;
+        }
+    }
     public static String get16BitMapStr(byte[] bitMap16){
         String bitMapStr = "";
         // 16位图转2进制位图128位字符串
