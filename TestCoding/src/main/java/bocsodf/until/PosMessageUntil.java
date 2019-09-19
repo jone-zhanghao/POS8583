@@ -1,5 +1,7 @@
 package bocsodf.until;
 
+import bocsodf.constant.PosCode;
+
 import java.util.TreeMap;
 
 /**
@@ -26,16 +28,12 @@ public class PosMessageUntil {
             //组包 ：位图 + 报文域
             byte[] send8583 = Pos8583Until.make8583(filedMap);
             System.out.println("完成组装位图 + 8583报文域==" + new String(send8583, packet_encoding) + "==");
-            System.out.print("8583==" );
-            byte[] abc = new String(send8583, packet_encoding).getBytes(packet_encoding);
-            for(byte a:abc){
-                System.out.print(a);
-            }
-            System.out.println("" );
+
             //组包 ：报文类型标识符
             byte[] sendTypeId = message_Type_ID.getBytes(packet_encoding);
+
             //处理报文头中的报文总长度(报文头46 + 报文类型标识符4 + 位图 + 报文域)
-            headerMap.put("Total–Message-Length",String.valueOf(50 + send8583.length));//报文总长度
+            headerMap.put("Total–Message-Length",String.valueOf(PosCode.POS_HEADER_LEN + sendTypeId.length + send8583.length));//报文总长度
             //组包 ：头
             byte[] sendHeader = PosHeaderUntil.makeHeader(headerMap);
             System.out.println("完成组装报文头==" + new String(sendHeader, packet_encoding) + "==");

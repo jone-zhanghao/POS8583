@@ -9,6 +9,7 @@ package bocsodf.constant;
  * @author ZhangHao
  */
 public class PosCode {
+    public final static int POS_HEADER_LEN = 46;
     public final static String POS_ENCODING = "ASCII";//POS消息编码格式
     public final static String HEADER_LENGTH = "Header-Length";//报文头长度
     public final static String HEADER_FLG_VERSION = "Header-Flag-and-Version";//头标识和版本号：测试报文

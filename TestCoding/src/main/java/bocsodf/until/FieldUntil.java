@@ -182,7 +182,6 @@ public class FieldUntil {
      * @return
      */
     public static byte[] subBytes(byte[] src, int begin, int count) {
-        //Todo 效率优化
         byte[] bs = new byte[count];
         for (int i=begin;i<begin+count; i++) {
             bs[i-begin] = src[i];

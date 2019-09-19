@@ -62,7 +62,9 @@ public class DataAnalysis {
             //*解析位图 + 报文域
             startNum += 4;
             int totLength = Integer.parseInt((String) header.get(PosCode.HEADER_TOT_MESS_LEN)) - startNum;
-            Map back = Pos8583Until.analyze8583(FieldUntil.subBytes(buffer,startNum,totLength));
+            byte[] buffer8583 = new byte[totLength];
+            System.arraycopy(buffer, startNum, buffer8583, 0, totLength);
+            Map back = Pos8583Until.analyze8583(buffer8583);
             System.out.println("完成解析8583报文==" + back.toString() + "==");
 
             //处理请求
